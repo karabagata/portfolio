@@ -42,27 +42,9 @@ export default function Home() {
         <div className="absolute -bottom-36 -left-28 w-[420px] h-[420px] rounded-full bg-gradient-to-br from-indigo-200/40 via-sky-100/20 to-blue-200/40 blur-[110px]" />
         <div className="absolute inset-x-0 -bottom-16 h-40 bg-[radial-gradient(ellipse_at_bottom,rgba(59,130,246,0.28),transparent_70%)]" />
 
-        <div className="relative flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          {/* Profile Photo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
-          >
-            <div className="absolute -inset-6 rounded-full bg-gradient-to-br from-blue-200/40 via-blue-100/30 to-indigo-200/40 blur-3xl" />
-            <div className="relative w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden ring-2 ring-white/80 bg-gradient-to-br from-white via-white to-blue-50 shadow-[0_35px_65px_-35px_rgba(59,130,246,0.9)]">
-              <img
-                src="/profile.png"
-                alt="Portrait of Ata KARABAG"
-                className="h-full w-full object-cover"
-                style={{ objectPosition: 'center 35%' }}
-              />
-            </div>
-          </motion.div>
-
+        <div className="relative">
           {/* Introduction Text */}
-          <div className="flex-1 text-center md:text-left md:pt-4">
+          <div className="text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -86,7 +68,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-gray-500 mb-6 flex items-center justify-center md:justify-start"
+              className="text-gray-500 mb-6 flex items-center justify-center"
             >
               <svg
                 className="w-5 h-5 mr-2"
@@ -115,7 +97,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-wrap gap-4 justify-center md:justify-start"
+              className="flex flex-wrap gap-4 justify-center"
             >
               <Link
                 href="/projects"
