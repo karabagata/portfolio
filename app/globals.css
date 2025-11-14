@@ -194,37 +194,122 @@ p {
   color: #ffe081;
 }
 
-.project-tag.python,
-.project-tag.py,
-.project-tag.pytorch,
-.project-tag.ml,
-.project-tag.dl,
-.project-tag.ts,
-.project-tag.rnn,
+.project-tag.python {
+  background: rgba(73, 134, 255, 0.18);
+  border-color: rgba(73, 134, 255, 0.45);
+  color: #aec4ff;
+}
+
+.project-tag.py {
+  background: rgba(92, 219, 149, 0.18);
+  border-color: rgba(92, 219, 149, 0.45);
+  color: #8ff5bf;
+}
+
+.project-tag.pytorch {
+  background: rgba(255, 99, 132, 0.18);
+  border-color: rgba(255, 99, 132, 0.45);
+  color: #ffb4c6;
+}
+
+.project-tag.ml {
+  background: rgba(178, 129, 255, 0.18);
+  border-color: rgba(178, 129, 255, 0.45);
+  color: #d8c4ff;
+}
+
+.project-tag.dl {
+  background: rgba(72, 202, 228, 0.18);
+  border-color: rgba(72, 202, 228, 0.45);
+  color: #8be7f5;
+}
+
+.project-tag.ts {
+  background: rgba(255, 176, 97, 0.18);
+  border-color: rgba(255, 176, 97, 0.45);
+  color: #ffd2ac;
+}
+
+.project-tag.rnn {
+  background: rgba(209, 109, 244, 0.18);
+  border-color: rgba(209, 109, 244, 0.45);
+  color: #edc2ff;
+}
+
 .project-tag.llm {
-  background: rgba(121, 162, 241, 0.15);
-  border-color: rgba(121, 162, 241, 0.4);
-  color: #a6c3ff;
+  background: rgba(255, 215, 0, 0.18);
+  border-color: rgba(255, 215, 0, 0.45);
+  color: #ffe680;
 }
 
-.project-tag.web,
-.project-tag.dash,
-.project-tag.express,
-.project-tag.flask,
-.project-tag.sql,
+.project-tag.web {
+  background: rgba(102, 217, 232, 0.18);
+  border-color: rgba(102, 217, 232, 0.45);
+  color: #b8f4fb;
+}
+
+.project-tag.dash {
+  background: rgba(255, 182, 193, 0.2);
+  border-color: rgba(255, 182, 193, 0.48);
+  color: #ffd3db;
+}
+
+.project-tag.express {
+  background: rgba(255, 148, 77, 0.2);
+  border-color: rgba(255, 148, 77, 0.48);
+  color: #ffcaa7;
+}
+
+.project-tag.flask {
+  background: rgba(163, 223, 250, 0.18);
+  border-color: rgba(163, 223, 250, 0.45);
+  color: #d6f0ff;
+}
+
+.project-tag.sql {
+  background: rgba(126, 203, 255, 0.18);
+  border-color: rgba(126, 203, 255, 0.45);
+  color: #d2ecff;
+}
+
 .project-tag.db {
-  background: rgba(125, 230, 191, 0.14);
-  border-color: rgba(125, 230, 191, 0.4);
-  color: #7de6bf;
+  background: rgba(255, 228, 196, 0.2);
+  border-color: rgba(255, 228, 196, 0.48);
+  color: #ffeeda;
 }
 
-.project-tag.other,
-.project-tag.default,
-.project-tag.geo,
-.project-tag.graph,
-.project-tag.rs,
-.project-tag.cpp,
+.project-tag.geo {
+  background: rgba(152, 251, 152, 0.18);
+  border-color: rgba(152, 251, 152, 0.45);
+  color: #ccfdd0;
+}
+
+.project-tag.graph {
+  background: rgba(218, 112, 214, 0.2);
+  border-color: rgba(218, 112, 214, 0.48);
+  color: #f0c4ee;
+}
+
+.project-tag.rs {
+  background: rgba(137, 170, 255, 0.18);
+  border-color: rgba(137, 170, 255, 0.45);
+  color: #ced9ff;
+}
+
+.project-tag.cpp {
+  background: rgba(120, 115, 255, 0.2);
+  border-color: rgba(120, 115, 255, 0.48);
+  color: #d1d0ff;
+}
+
 .project-tag.game {
+  background: rgba(255, 105, 180, 0.2);
+  border-color: rgba(255, 105, 180, 0.48);
+  color: #ffc0e3;
+}
+
+.project-tag.default,
+.project-tag.other {
   background: rgba(148, 163, 184, 0.12);
   border-color: rgba(148, 163, 184, 0.35);
   color: rgba(222, 230, 240, 0.82);
