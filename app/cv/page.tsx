@@ -14,7 +14,7 @@ export default function CV() {
             download="AtaKARABAG_CV.pdf"
             className="text-sm uppercase tracking-[0.24em] text-muted hover:text-accent"
           >
-            Download the PDF ->
+            Download the PDF -&gt;
           </a>
           <div className="border border-white/10 bg-background-alt/40">
             <iframe

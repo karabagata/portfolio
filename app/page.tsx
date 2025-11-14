@@ -27,7 +27,7 @@ export default function Home() {
           </p>
           <ProjectsList projects={projects} limit={3} />
           <Link href="/projects" className="text-sm uppercase tracking-[0.24em] text-muted hover:text-accent">
-            View the full index ->
+            View the full index -&gt;
           </Link>
         </div>
       </section>
