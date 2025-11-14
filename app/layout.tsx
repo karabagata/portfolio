@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
-import { LanguageProvider } from '@/components/LanguageProvider'
 
 export const metadata: Metadata = {
   title: 'Ata KARABAG - Portfolio',
@@ -16,14 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative min-h-screen bg-gradient-to-br from-slate-50 via-white to-sky-50">
-        <LanguageProvider>
-          <Navigation />
-          <main className="min-h-screen">
-            {children}
-          </main>
-          <Footer />
-        </LanguageProvider>
+      <body className="min-h-screen bg-background text-text font-mono flex flex-col">
+        <Navigation />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   )
