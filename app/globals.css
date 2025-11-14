@@ -260,10 +260,25 @@ footer a {
 }
 
 .footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 0.85rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
+  transition: color 160ms ease;
+}
+
+.footer-link-icon {
+  display: inline-flex;
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.footer-link-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .footer-bottom {
