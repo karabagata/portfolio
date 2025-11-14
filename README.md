@@ -1,130 +1,67 @@
-# Ata KARABAG - Personal Portfolio Website
+# Ata KARABAG — Portfolio Overview
 
-A modern, minimalist portfolio website built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**.
+Welcome to the source of my personal portfolio at [atakarabag.com](https://atakarabag.com).  
 
-## Features
+---
 
-- ✨ Clean and professional design
-- 📱 Fully responsive layout
-- 🎨 Smooth animations with Framer Motion
-- 🚀 Fast performance with Next.js 14
-- 📄 Embedded CV with PDF viewer
-- 🎯 Three main sections: Home, Projects, and CV
+## What You’ll Find on the Site
+- **Overview / Home** – A snapshot of my background as a Master’s student in Data Science & AI, plus the capabilities and tools I rely on.
+- **Projects Index** – Curated highlights from the projects I’ve shipped (LLM products, geospatial analytics, forecasting systems, and more) with quick context and technology tags.
+- **Curriculum Vitae** – An embedded PDF viewer and a direct download link to my most recent CV.
+- **Contact & Socials** – Direct links to reach me via email, GitHub, and LinkedIn.
 
-## Tech Stack
+The layout intentionally mimics a sleek terminal interface: grouped sections, repeating vertical blocks for a “fake endless scroll,” and tooltip-enriched project tags so acronyms (e.g., `py`, `geo`, `ts`) are easy to decode at a glance.
 
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Icons**: SVG inline icons
+---
 
-## Getting Started
+## Experience Highlights
+- Hands-on work with machine learning, LLM alignment, geospatial analytics, forecasting, and explainable AI.
+- Building data products end-to-end: scoping pipelines, evaluating models with stakeholder-friendly explainability, and presenting insights via lightweight interfaces.
+- Comfortable moving between Python (PyTorch, scikit-learn, GeoPandas), modern web stacks (Next.js, Dash, Flask), and classic tools (SQL, Bash, Git).
 
-### Prerequisites
+---
 
-- Node.js 18.x or higher
-- npm or yarn
+## Technology Stack
+- **Framework**: Next.js 14 (App Router) for hybrid static/server rendering and fast routing.
+- **Language**: TypeScript for type safety across components and data models.
+- **Styling**: Tailwind CSS plus custom CSS for the terminal-inspired aesthetic and responsive layout.
+- **UI Enhancements**: Inline SVG icons, custom tooltips, and a reusable `ProjectsList` component for the endless-scroll effect.
+- **Assets**: Next.js `<Image>` optimization, PDF embedding via standard HTML `<iframe>`.
 
-### Installation
+---
 
-1. Install dependencies:
-```bash
-npm install
-```
+## Hosting & Deployment
+- **Hosting Platform**: Vercel – ideal for Next.js, enabling zero-config builds, edge caching, and automatic HTTPS.
+- **Build Pipeline**: GitHub → Vercel continuous deployment. Every push to the main branch triggers a build and redeploy.
+- **Static Assets**: Served via Vercel’s CDN (including the CV PDF and brand imagery).
 
-2. **Important**: Replace the placeholder CV file with your actual CV:
-   - Add your CV PDF file to `/public/AtaKARABAG_CV.pdf`
-   - The placeholder file is just for demonstration
+---
 
-3. Run the development server:
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-### Build for Production
-
-```bash
-npm run build
-npm start
-```
-
-## Project Structure
+## Repository Guide
+While this README targets viewers rather than contributors, here is a quick reference if you want to explore the code:
 
 ```
-Portfolio/
-├── app/
-│   ├── layout.tsx          # Root layout with Navigation and Footer
-│   ├── page.tsx            # Home/About page
-│   ├── projects/
-│   │   └── page.tsx        # Projects page
-│   ├── cv/
-│   │   └── page.tsx        # CV page
-│   └── globals.css         # Global styles
-├── components/
-│   ├── Navigation.tsx      # Navigation bar component
-│   ├── Footer.tsx          # Footer component
-│   └── ProjectCard.tsx     # Project card component
-├── public/
-│   └── AtaKARABAG_CV.pdf  # CV file (replace with actual CV)
-└── Configuration files...
+app/
+  layout.tsx      # Shared shell with navigation & footer
+  page.tsx        # Home / overview page
+  projects/page.tsx
+  cv/page.tsx     # Embedded CV + download link
+components/
+  ProjectsList.tsx   # Tag tooltips & reusable rows
+  ContactBanner.tsx  # Contact call-to-action
+  Navigation.tsx / Footer.tsx
+lib/
+  projects.ts     # Centralised structured project data
+public/
+  AtaKARABAG_CV.pdf  # Latest CV served on the site
 ```
 
-## Customization
+---
 
-### Update Social Links
-
-Edit the social links in `/components/Footer.tsx`:
-- GitHub: Replace `https://github.com` with your GitHub profile URL
-- LinkedIn: Replace `https://linkedin.com` with your LinkedIn profile URL
-
-### Add More Projects
-
-Edit the `projects` array in `/app/projects/page.tsx`:
-```typescript
-const projects = [
-  {
-    title: 'Your Project Title',
-    description: 'Your project description',
-    tags: ['Tag1', 'Tag2', 'Tag3'],
-  },
-  // Add more projects...
-];
-```
-
-### Change Colors
-
-Modify colors in `/tailwind.config.ts`:
-```typescript
-colors: {
-  background: '#f9fafb',
-  accent: '#3b82f6',  // Change this to your preferred accent color
-}
-```
-
-## Deployment
-
-### Deploy to Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import your repository on [Vercel](https://vercel.com)
-3. Vercel will automatically detect Next.js and deploy
-
-### Other Platforms
-
-This is a standard Next.js application and can be deployed to:
-- Netlify
-- AWS Amplify
-- Railway
-- Any platform supporting Node.js
-
-## License
-
-© 2025 Ata KARABAG. All rights reserved.
-
-## Contact
-
+## Stay in Touch
+- **Website**: [atakarabag.com](https://atakarabag.com)
+- **GitHub**: [github.com/karabagata](https://github.com/karabagata)
+- **LinkedIn**: [linkedin.com/in/ata-berk-karabag-011619220](https://www.linkedin.com/in/ata-berk-karabag-011619220/)
 - **Email**: ataberk.karabag@gmail.com
-- **Location**: Strasbourg, France
+
+Thanks for taking the time to learn about the portfolio—feel free to explore the site and reach out if you’d like to collaborate or discuss a project.
