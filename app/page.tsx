@@ -39,6 +39,9 @@ export default function Home() {
           I am in the final stages of my master’s program and will soon start a six-month internship at <Link href="https://kwarto.io" target="_blank">Kwarto</Link> as a Data Scientist / AI Developer. 
            During this internship, I will focus on building machine learning models and developing computer vision systems.
           </p>
+          <p>
+           I have been looking into Virtual Try On (VTON) approachs/models lately.
+          </p>
           <div className="terminal-stack">
           <h3>Capabilities</h3>
           <p>LLM alignment, geospatial analytics, forecasting, classification, computer vision, 
